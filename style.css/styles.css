@@ -118,6 +118,18 @@ a{
     display: flex;
     align-items: center;
 }
+.contacts-head-item{
+    display: flex;
+    align-items: center;
+}
+.contacts-icon{
+    margin-right: 10px;
+    cursor: pointer;
+    fill: #757575 ;
+}
+ .contacts-icon:hover, .contacts-icon:focus{
+    fill: var(--accent-color);
+}
 .contacts-head-item:not(:last-child) {
     margin-right: 50px;
 }
@@ -144,12 +156,11 @@ a{
     font-weight: 900;
     font-size: 44px;
     line-height: 1.364;
-    color: #ffffff;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    background-color: teal;
     text-align: center;
     margin-bottom: 30px;
+    color: #FFFFFF ;
 }   
     .mdlbutton{
     display:inline-block;
@@ -178,6 +189,18 @@ a{
     .mdlbutton:focus {
         color: #FFFFFF;
         background-color: #188CE8;
+    }
+    .hero{
+        height: 600px;
+        max-width: 1600px;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: 
+        url(../images/Img.png);
+        background-color:#c4c4c4;
+        background-size: cover;
+        background-repeat: no-repeat;
+
     }
     /*=======end hero======*/
     /*=======about=======*/
@@ -225,6 +248,13 @@ a{
         line-height: 1.714;
         letter-spacing: 0.03em;
         color: #757575;
+   }
+   .poster{
+       display: flex;
+       height: 120px;
+       background-color: #F5F4FA ;
+       justify-content: center;
+       align-items: center;
    }
    /*========end about====*/
    /*========our job======*/
@@ -288,12 +318,77 @@ border-radius: 0px 0px 4px 4px;
         text-align: center;
         margin-bottom: 30px;
    }
+   .social-list{
+       display: flex;
+       justify-content: space-evenly;
+       margin-bottom: 30px;
+   }
+   .social-list-link{
+       display: flex;
+       width: 44px;
+       height: 44px;
+       border-radius: 50%;
+       background-color: #fff;
+       justify-content: center;
+       align-items: center;
+   }
+   .social-list-icon{
+       fill:#757575 ;
+   }
+   .social-list-link:hover .social-list-icon,
+   .social-list-link:focus .social-list-icon {
+       fill: #FFFFFF ;
+   }
+   .social-list-link:hover, 
+   .social-list-link:focus {
+       background-color:var(--accent-color);
+   }
    /*=======end employee=====*/
+   /*========clients===========*/
+   .clients{
+       padding-top: 94px;
+       padding-bottom: 94px;
+   }
+   .clients-list{
+       display: flex;
+   }
+   .clients-list-item{
+       width: 170px;
+       height: 90px;
+       border: 1px solid #AFB1B8;
+border-radius: 4px
+   }
+   .clients-list-item:not(:last-child){
+       margin-right: 30px;
+   }
+   .clients-list-item{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       cursor: pointer;
+   }
+   .clients-list-icon{
+       fill:#757575 ;
+   }
+   .clients-list-item:hover .clients-list-icon,
+   .clients-list-item:focus .clients-list-icon {
+       fill: var(--accent-color);
+   }
+   .clients-list-icon:hover,
+   .clients-list-icon:focus {
+       fill: var(--accent-color);
+   }
    /*=======footer==========*/
    .footer{
        background-color:#2f303a;
        padding-top: 60px;
        padding-bottom: 60px;
+   }
+   .footer .container{
+       display: flex;
+   }
+   .left-side{
+       margin-right: 70px;
    }
    .address{
        font-style: normal;
@@ -305,6 +400,7 @@ border-radius: 0px 0px 4px 4px;
     
     margin-top: 20px;
    }
+  
    .contacts{
        margin-top: 9px;
    }
@@ -314,6 +410,34 @@ border-radius: 0px 0px 4px 4px;
 .contacts-item:not(:last-child){
     margin-bottom: 9px;
 }
+.right-side {
+    min-width: 206px;
+    height: 80px;
+}
+.title-social{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 12px;
+    margin-bottom:20px;
+   }
+   .social-list-item.dark:not(:last-child){
+       margin-right: 10px;
+
+   }
+   .social-list-link.dark{
+       background-color:rgba(255, 255, 255, 0.1);
+   }
+   .social-list-icon.dark{
+       fill: #fff;
+   }
+   .social-list-link.dark:hover,
+   .social-list-link.dark:focus{
+       background-color:var(--accent-color);
+   }
    /*=======end footer====*/
    /*=======our projects======*/
    .portfolio{
@@ -366,7 +490,7 @@ border-radius: 0px 0px 4px 4px;
     }
     .filters-list{
         display: flex;
-        margin-bottom: 34px;
+        margin-bottom: 50px;
         justify-content: center;
     }
     .filters-list-item:not(:last-child){
