@@ -205,9 +205,7 @@ a:focus{
         margin-left: auto;
         margin-right: auto;
       background-image:linear-gradient  (to right, rgba(47, 48, 58, 0.1),
-       rgba(47, 48, 58, 0.1)),url("../images/img.jpg");
-     
-      
+       rgba(47, 48, 58, 0.1)),url(../images/img.jpg);
         background-color:#c4c4c4;
         background-size: cover;
         background-repeat: no-repeat;
