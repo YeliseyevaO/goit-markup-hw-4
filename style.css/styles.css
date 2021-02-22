@@ -30,6 +30,10 @@ a:hover,
 a:focus{
     outline: none;
 }
+button:hover,
+button:focus{
+    outline: none;
+}
 .title {
     font-weight: 700;
     font-size: 36px;
@@ -204,8 +208,8 @@ a:focus{
         max-width: 1600px;
         margin-left: auto;
         margin-right: auto;
-      background-image:/*linear-gradient  (to right, rgba(47, 48, 58, 0.1),
-       rgba(47, 48, 58, 0.1)),*/url(../images/img.jpg);
+      background-image:linear-gradient  (to right rgba(47, 48, 58, 0.4),
+       rgba(47, 48, 58, 0.4)), url(../images/img.jpg);
         background-color:#c4c4c4;
         background-size: cover;
         background-repeat: no-repeat;
@@ -491,7 +495,6 @@ border-radius: 4px
         letter-spacing: 0.03em;
         color: #212121;
         border: none;
-        background-color: #ffffff;
 
         min-width: 73px;
         height: 38px;
@@ -499,7 +502,8 @@ border-radius: 4px
         cursor: pointer;
         background-color: #f5f4fa;
     }
-    .filter.active{
+    .filter:hover
+    .filter:focus{
         display: inline-block;
         color: #ffffff;
         background-color: var(--accent-color);
